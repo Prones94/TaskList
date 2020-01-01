@@ -1,12 +1,22 @@
 // Check specific items off when click
-$('li').click(function() {
+$('ul').on("click","li",function() {
    $(this).toggleClass("completed")
-})
+});
 
 // Click on X to delete Task
-$("span").click(function(){
+$("ul").on("click","span",function(){
     $(this).parent().fadeOut(1000,function(){
       $(this).remove()  
     });
     event.stopPropagation()
+});
+
+$("input[type='text']").on("keypress", function(e){
+    if(e.which === 13){
+        // get new task from user input
+        var toDoTask = $(this).val();
+        $(this).val("")
+        //create a new li and add to parent ul
+        $("ul").append("<li><span>X </span>" + toDoTask + "</li>")
+    }
 })
