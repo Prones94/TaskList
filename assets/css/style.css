@@ -1,0 +1,9 @@
+.container {
+    border: 2px solid grey;
+    width: 35%;
+    margin: 0 auto;
+}
+.completed {
+    color: lightgrey;
+    text-decoration: line-through;
+}
