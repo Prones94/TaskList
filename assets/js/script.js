@@ -17,6 +17,10 @@ $("input[type='text']").on("keypress", function(e){
         var toDoTask = $(this).val();
         $(this).val("")
         //create a new li and add to parent ul
-        $("ul").append("<li><span>X </span>" + toDoTask + "</li>")
+        $("ul").append("<li><span><i class='fa fa-trash' aria-hidden='true'></i></span>" + toDoTask + "</li>")
     }
+});
+
+$("#toggle").click(function(){
+    $("input[type='text']").fadeToggle()
 })
