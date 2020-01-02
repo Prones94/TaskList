@@ -30,37 +30,6 @@ li {
 li:nth-child(2n){
     background-color: #f7f7f7;
 }
-
-input {
-    font-size: 18px;
-    color: #2980b9;
-    background-color: #f7f7f7;
-    width: 100%;
-    padding: 13px 13px 13px 20px;
-    box-sizing: border-box;
-    border: 3px solid rbga(0, 0, 0, 0);
-}
-input:focus {
-    background-color: white;
-    border: 3px solid #2980b9;
-    outline: none;
-}
-
-#container {
-  box-shadow: 0 0 10px rbga(12, 0, 0, 0.5);
-  width: 35%;
-  margin: 100px auto;
-  background-color: #f7f7f7;
-}
-.completed {
-  color: lightgrey;
-  text-decoration: line-through;
-}
-
-.fa-pencil {
-    float: right;
-}
-
 li span {
     background-color: #e74c3c;
     height: 40px;
@@ -77,3 +46,35 @@ li:hover span{
     width: 40px;
     opacity: 1.0;
 }
+
+input {
+    font-size: 18px;
+    color: #2980b9;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    border: 3px solid rbga(0, 0, 0, 0);
+}
+input:focus {
+    background-color: white;
+    border: 3px solid #2980b9;
+    outline: none;
+}
+
+.completed {
+  color: lightgrey;
+  text-decoration: line-through;
+}
+
+.fa-pencil {
+    float: right;
+}
+
+#container {
+  box-shadow: 0 0 10px rbga(12, 0, 0, 0.5);
+  width: 35%;
+  margin: 100px auto;
+  background-color: #f7f7f7;
+}
+
